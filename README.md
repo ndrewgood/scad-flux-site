@@ -34,8 +34,7 @@ Created by: Andrew Goodridge, Eric Flatt, and Varun Kharti
     * in the future we can make a `dev` branch to hold updates
     
 ### After making changes to Studio(`/studio`)
-*this is for when you update the schema, **NOT** everytime you add content to the site via `localhost:3000` or `scadflux.sanity.studio`*
-
+*this is for when you update the schema OR add content to the site via `localhost:3000`
 
 * `cd studio/`
 * `sanity deploy`
