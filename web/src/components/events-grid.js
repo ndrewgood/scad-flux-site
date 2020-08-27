@@ -1,19 +1,19 @@
 import React from 'react'
 import EventCard from './eventCard'
 import ViewAllButton from './viewAllButton'
-import viewAllButton from './viewAllButton'
+import '../styles/events-grid.scss'
 
 const eventsgrid = () => {
     return(
-        <div>
+        <section className="container">
             <h1>Events Grid</h1>
-            <div>
+            <div className="threeGrid">
                 <EventCard/>
                 <EventCard/>
                 <EventCard/>
             </div>
             <ViewAllButton/>           
-        </div>
+        </section>
     )
 }
 

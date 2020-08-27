@@ -6,7 +6,6 @@ import Hero from '../components/hero'
 import EventsGrid from '../components/events-grid'
 import Gallery from '../components/gallery'
 import SmallCommunityGrid from '../components/smallCommunityGrid'
-import Footer from '../components/footer'
 
 
 export const query = graphql`
@@ -28,10 +27,11 @@ const IndexPage = props => {
     <Layout>
       <Hero />
       {/* events title */}
-      <EventsGrid />
-      <Gallery />
-      <SmallCommunityGrid />
-      <Footer />
+      <main>
+        <EventsGrid />
+        <Gallery />
+        <SmallCommunityGrid />
+      </main>
     </Layout>
   )
 }

@@ -2,6 +2,8 @@ import React from 'react'
 
 import SEO from '../components/seo'
 import Navigation from '../components/nav'
+import Footer from '../components/footer'
+import "../styles/styles.scss"
 
 
 const layout = (props) => {
@@ -12,6 +14,7 @@ const layout = (props) => {
             <SEO />
             <Navigation />
             { children }
+            <Footer/>
         </div>
     )
 }

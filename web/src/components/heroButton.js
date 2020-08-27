@@ -1,10 +1,9 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const heroButton = () => {
     return(
-        <div>
-            <h3>Button</h3>
-        </div>
+        <Link to="/"><button>Button</button></Link>
     )
 }
 

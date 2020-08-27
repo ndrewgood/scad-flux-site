@@ -2,12 +2,12 @@ import React from 'react'
 
 const footer = () => {
     return(
-        <div>
+        <footer>
             <h1>SCAD FLUX</h1>
             <div>
                 
             </div>
-        </div>
+        </footer>
     )
 }
 

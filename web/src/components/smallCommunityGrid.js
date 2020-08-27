@@ -5,7 +5,7 @@ import ViewAllButton from './viewAllButton'
 
 const smallCommunityGrid = () => {
     return(
-        <div>
+        <section>
             <SectionTitle title="Commmunity" description="Heres a quick description of the kinds of events on here. this paragraph will take up more space and will have more purpose to it i just didnt feel like grabbing lorem."/>
             <div>
                 <CommunityCard/>
@@ -13,7 +13,7 @@ const smallCommunityGrid = () => {
                 <CommunityCard/>
             </div>
             <ViewAllButton/>
-        </div>
+        </section>
     )
 }
 
