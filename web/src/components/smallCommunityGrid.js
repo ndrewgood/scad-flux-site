@@ -12,7 +12,7 @@ const smallCommunityGrid = () => {
                 <CommunityCard/>
                 <CommunityCard/>
             </div>
-            <ViewAllButton/>
+            <ViewAllButton link="about"/>
         </section>
     )
 }
