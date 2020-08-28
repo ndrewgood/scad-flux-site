@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import '../styles/viewAllButton.scss'
 
 const viewAllButton = props => {
     return(
-        <Link to={props.link}>
-            <button>View All</button>
-        </Link>
+        <div className="viewAllButton">
+            <Link to={props.link}>
+                <button>View All</button>
+            </Link>
+        </div>
     )
 }
 

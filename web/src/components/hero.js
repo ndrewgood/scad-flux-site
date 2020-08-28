@@ -6,8 +6,8 @@ const hero = () => {
     return(
         <div className="hero">
             <img src="" alt=""/>
-            <h1>We are Future Leader of User Experience</h1>
-            <h2>A student-run organization from the Savannah College of Art and Design</h2>
+            <h1>We're the Future Leaders of <br/>User Experience Design</h1>
+            <h2>A student-run organization from <br/>the Savannah College of Art and Design</h2>
             <div className="buttonHolder">
                 <HeroButton/>
                 <HeroButton/>
