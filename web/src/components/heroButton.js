@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import '../styles/heroButton.scss'
 
-const heroButton = () => {
+const heroButton = props => {
     return(
-        <Link to="/"><button>Button</button></Link>
+    <Link to={props.link}><button className="largeBlueButton">{props.title}</button></Link>
     )
 }
 
