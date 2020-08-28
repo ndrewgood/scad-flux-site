@@ -7,7 +7,10 @@ const eventsgrid = () => {
     return(
         <section className="events-grid">
             <div class="container">
-                <h1>Events Grid</h1>
+                <div className="eventTitle">
+                    <h1 className="title medium">Events</h1>
+                    <button className="whiteButton">Add FLUX Calendar</button>
+                </div>
                 <div className="threeGrid">
                     <EventCard size="expanded"/>
                     <EventCard/>

@@ -1,3 +1,9 @@
 .events-grid {
-    background: #EAEFFA;
+    background: #FAFAFA;
+
+    .eventTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
 }

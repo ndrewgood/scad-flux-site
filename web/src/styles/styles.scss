@@ -1,8 +1,70 @@
+// Typography
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 * {
     font-family: 'Inter', sans-serif;
 }
+
+.title {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 118%;
+    margin-top: 0;
+
+    &.large {
+        font-size: 48px;
+    }
+
+    &.medium {
+        font-size: 34px;
+    }
+
+    &.regular {
+        font-size: 22px;
+    }
+
+    &.small {
+        font-size: 17px;
+    }
+}
+
+.body {
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 0;
+
+    &.large {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    &.medium {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    &.regular {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    &.small {
+        font-size: 13px;
+        line-height: 20px;
+    } 
+
+    &.bold {
+        font-weight: 700;
+    }
+
+    &.semi-bold {
+        font-weight: 600;
+    }
+}
+
+
+// General Layout
 
 .container {
     max-width: 1200px;
@@ -19,7 +81,10 @@ section {
     padding: 50px 0;
 }
 
-.smallBlueButton {
+
+// Buttons
+
+.blueButton {
     padding: 14px 22px;
     font-weight: 600;
     text-transform: capitalize;
@@ -30,13 +95,13 @@ section {
     border-radius: 5px;
 }
 
-.largeBlueButton {
+.whiteButton {
     padding: 14px 22px;
     font-weight: 600;
     text-transform: capitalize;
     font-size: 15px;
-    background: #1B5BF5;
-    color: white;
-    border: none;
+    border: 1.5px solid #1B5BF5;
+    color: #1B5BF5;
+    background: white;
     border-radius: 5px;
 }

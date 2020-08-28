@@ -1,0 +1,25 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.13);
+    
+    div {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin-right: 20px;
+            }
+        }
+    }   
+}

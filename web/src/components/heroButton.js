@@ -4,7 +4,7 @@ import '../styles/heroButton.scss'
 
 const heroButton = props => {
     return(
-    <Link to={props.link}><button className="largeBlueButton">{props.title}</button></Link>
+    <Link to={props.link}><button className="blueButton">{props.title}</button></Link>
     )
 }
 

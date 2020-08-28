@@ -6,7 +6,7 @@ const viewAllButton = props => {
     return(
         <div className="viewAllButton">
             <Link to={props.link}>
-                <button className="smallBlueButton">View All { props.type }</button>
+                <button className="blueButton">View All { props.type }</button>
             </Link>
         </div>
     )
