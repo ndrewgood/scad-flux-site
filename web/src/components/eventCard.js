@@ -11,15 +11,15 @@ const eventCard = props => {
     }
 
     return(
-        <div className={size}>
+        <Link className={size} to="/" >
             <div>
                 <img src={image} alt=""/>
             </div>
             <h2 className="body large bold">Event Name</h2>
             <h3 className="body regular">Event Time/Date</h3>
             <p className="body small">Event Description</p>
-            <Link to="/" activeClassName="viewMore body small semi-bold">View More</Link>
-        </div>
+            <p className="viewMore body small semi-bold">View More</p>
+        </Link>
     )
 }
 

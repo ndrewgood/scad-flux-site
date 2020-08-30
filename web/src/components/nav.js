@@ -9,7 +9,6 @@ const nav = (props) => {
             <div className="container">
                 <img src={logo} alt="" width="50px" height="50px"/>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/events">Events</Link></li>
                     <li><Link to="/community">Community</Link></li>

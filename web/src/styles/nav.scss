@@ -12,7 +12,10 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        a {
+            color: #8A8A8A;
+            text-decoration: none;
+        }
         ul {
             list-style: none;
             display: flex;
