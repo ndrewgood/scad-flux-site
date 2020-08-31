@@ -1,13 +1,15 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import "../styles/nav.scss"
-import logo from '../assets/flux2020logo.jpg'
+import logo from '../assets/FLUXlogo.svg'
 
 const nav = (props) => {
     return(
         <nav>
             <div className="container">
-                <img src={logo} alt="" width="50px" height="50px"/>
+                <Link to="/">
+                    <img src={logo} alt="" width="40px" height="40px"/>
+                </Link>
                 <ul>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/events">Events</Link></li>

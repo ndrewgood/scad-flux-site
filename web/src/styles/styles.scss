@@ -28,12 +28,17 @@
     &.small {
         font-size: 17px;
     }
+    &.center {
+        margin: auto;
+        text-align: center;
+    }
 }
 
 .body {
     font-style: normal;
     font-weight: normal;
     margin-top: 0;
+    color: #444444;
 
     &.large {
         font-size: 22px;
@@ -62,13 +67,22 @@
     &.semi-bold {
         font-weight: 600;
     }
+    &.center {
+        margin: auto;
+        text-align: center;
+    }
 }
 
 
 // General Layout
 
+body {
+    margin: 0;
+}
+
 .container {
     max-width: 1200px;
+    width: 90vw;
     margin: 0 auto;
 }
 
@@ -109,6 +123,10 @@ section {
 
 button:hover {
     cursor: pointer;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none;
 }
 
 // Shadows

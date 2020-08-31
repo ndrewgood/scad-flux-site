@@ -4,6 +4,7 @@ import {graphql} from 'gatsby'
 import Layout from '../containers/layout'
 import Hero from '../components/hero'
 import EventsGrid from '../components/events-grid'
+import Newsletter from '../components/newsletter'
 import Gallery from '../components/gallery'
 import SmallCommunityGrid from '../components/smallCommunityGrid'
 
@@ -29,6 +30,7 @@ const IndexPage = props => {
       {/* events title */}
       <main>
         <EventsGrid />
+        <Newsletter />
         <Gallery />
         <SmallCommunityGrid />
       </main>
