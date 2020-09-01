@@ -1,13 +1,19 @@
 import React from 'react'
 import '../styles/communityCard.scss'
+import image from '../assets/test-photo.jpg'
 
 
 const communityCard = () => {
     return(
         <div className="communityCard">
-            <img src="" alt=""/>
-            <h2>Person Name</h2>
-            <p>Speciality</p>
+            <div className="communityCardHeader">
+                <div>
+                    <img src={image} alt=""/>
+                </div>
+                <h2 className="name body medium bold">Person Name</h2>
+            </div>
+            <p className="speciality body">Interaction Designer</p>
+            <p className="location body small">Atlanta, GA, USA</p>
         </div>
     )
 }

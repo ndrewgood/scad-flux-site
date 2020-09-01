@@ -9,6 +9,19 @@
     text-decoration: none;
     color: black;
     transition: .4s;
+
+    &:before {
+        content: "";
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background: #fff;
+    }
+
     div {
         height: 225px;
 
@@ -25,17 +38,6 @@
         grid-column-start: span 2;
     }
 
-    &:before {
-        content: "";
-        position: absolute;
-        border-radius: 10px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background: #fff;
-    }
 
     h2 {
         margin-top: 15px;

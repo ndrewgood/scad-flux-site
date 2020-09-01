@@ -97,7 +97,7 @@ section {
 }
 
 
-// Buttons
+// Forms and Buttons
 
 .blueButton {
     padding: 14px 22px;
@@ -127,6 +127,21 @@ button:hover {
 
 textarea:focus, input:focus, button:focus{
     outline: none;
+}
+
+input, textarea {
+    background: #E8E8E8;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 22px;
+    resize: none;
+
+    &:focus {
+        box-shadow: 0 0 3px #316EFF;
+        font-weight: 600;
+    }
 }
 
 // Shadows

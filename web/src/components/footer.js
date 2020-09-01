@@ -1,11 +1,12 @@
 import React from 'react'
+import '../styles/footer.scss'
 
 const footer = () => {
     return(
         <footer>
             <div className="container">
                 <div className="socialMediaContainer">
-                    <p>Follow us</p>
+                    <p className="body semi-bold">Follow us</p>
                     <ul>
                         <li>fb</li>
                         <li>ig</li>
@@ -13,14 +14,15 @@ const footer = () => {
                         <li>em</li>
                     </ul>
                 </div>
-                <div className="emailContainer">
-                    <p>Send us your feedback</p>
+                <form className="emailContainer">
+                    <p className="body semi-bold">Send us your feedback</p>
                     <div className="emailTopBar">
-                        <input type="text" name="Your Name" id=""/>
-                        <input type="text" name="Email" id=""/>
+                        <input type="text" name="name" placeholder="Name" id=""/>
+                        <input type="text" placeholder="Email" name="email" id=""/>
                     </div>
-                    <textarea name="Your Messafe" id="" cols="30" rows="10"></textarea>
-                </div>
+                    <textarea name="message" placeholder="Your message" id="message"></textarea>
+                    <button type="submit" className="blueButton">Submit</button>
+                </form>
             </div>
         </footer>
     )

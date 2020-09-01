@@ -27,7 +27,6 @@ const IndexPage = props => {
   return (
     <Layout>
       <Hero />
-      {/* events title */}
       <main>
         <EventsGrid />
         <Newsletter />
