@@ -8,10 +8,10 @@ const newsletter = (props) => {
             <div className="container">
                 <h1 className="title medium center">Want to know more?</h1>
                 <p className="body center">Sign up for our weekly newsletter for the latest FLUX updates</p>
-                <div className="inputContainer">
-                    <input type="text" name="SCAD Email Address" id="newsletter-input"/>
+                <form className="inputContainer">
+                    <input type="email" placeholder="SCAD Email Address" name="scademail" id="newsletter-input" className="outlined"/>
                     <button className="blueButton" type="submit">Subscribe</button>
-                </div>
+                </form>
             </div>
         </section>            
     )
