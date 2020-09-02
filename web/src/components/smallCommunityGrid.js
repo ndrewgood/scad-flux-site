@@ -1,6 +1,5 @@
 import React from 'react'
 import CommunityCard from './communityCard'
-import SectionTitle from './sectionTitle'
 import ViewAllButton from './viewAllButton'
 import '../styles/smallCommunityGrid.scss'
 
@@ -8,8 +7,20 @@ const smallCommunityGrid = () => {
     return(
         <section className="smallCommunityGrid">
             <div className="container">
-                <SectionTitle title="Commmunity" description="Heres a quick description of the kinds of events on here. this paragraph will take up more space and will have more purpose to it i just didnt feel like grabbing lorem."/>
+                <div className="sectionTitle">
+                    <h1 className="title medium">FLUX Community</h1>
+                    <div className="communityDescription">
+                        <p className="body medium">FLUX exists to foster a community of leaders and problem-solvers through UX Design. Check out some of the work from some of our members, and feel free to submit yours as well! Portfolio submissions are open to all members of the FLUX community, regardless of major.</p>
+                        <button className="whiteButton">Submit Your Portfolio</button>
+                    </div>
+                </div>
                 <div className="threeGrid">
+                    <CommunityCard/>
+                    <CommunityCard/>
+                    <CommunityCard/>
+                    <CommunityCard/>
+                    <CommunityCard/>
+                    <CommunityCard/>
                     <CommunityCard/>
                     <CommunityCard/>
                     <CommunityCard/>
