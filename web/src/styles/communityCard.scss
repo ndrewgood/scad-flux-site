@@ -48,11 +48,13 @@
     .speciality {
         margin-top: 10px;
         margin-bottom: 5px;
+        text-transform: capitalize;
     }
 
     .location {
         color: #8A8A8A;
         margin: 0;
+        text-transform: capitalize;
     }
 
     &:hover {

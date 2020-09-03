@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
+
 import '../styles/heroButton.scss'
 
 const heroButton = props => {
     return(
-    <Link to={props.link}><button className="blueButton">{props.title}</button></Link>
+    <a className="heroButton" target="_blank" href={props.link}><button className="blueButton">{props.title}</button></a>
     )
 }
 

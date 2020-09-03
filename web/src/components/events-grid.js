@@ -6,7 +6,7 @@ import '../styles/events-grid.scss'
 const eventsgrid = () => {
     return(
         <section className="events-grid">
-            <div class="container">
+            <div className="container">
                 <div className="eventTitle">
                     <h1 className="title medium">Events</h1>
                     <button className="whiteButton">Add FLUX Calendar</button>

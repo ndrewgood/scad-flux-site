@@ -4,10 +4,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
 
     .buttonHolder {
-        width: 300px;
+        width: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -30,7 +30,7 @@
         border-radius: 5px;
         height: 160px;
         width: 160px;
-        margin-top: 30px;
+        margin-top: 80px;
     }
 
     .heroHighlight {
