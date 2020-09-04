@@ -7,6 +7,7 @@ import EventsGrid from '../components/events-grid'
 import Newsletter from '../components/newsletter'
 import Gallery from '../components/gallery'
 import SmallCommunityGrid from '../components/smallCommunityGrid'
+import FluxResources from '../components/fluxResources.js'
 
 
 export const query = graphql`
@@ -30,6 +31,7 @@ const IndexPage = props => {
       <main>
         <EventsGrid />
         <Newsletter />
+        <FluxResources />
         <Gallery />
         <SmallCommunityGrid />
       </main>

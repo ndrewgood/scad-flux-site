@@ -21,7 +21,11 @@ const EventsPage = props => {
 
   return (
     <Layout>
-      <h1>Events Page</h1>
+      <main className="adjusted">
+        <div className="container">
+          <h1>Events Page</h1>
+        </div>
+      </main>
     </Layout>
   )
 }

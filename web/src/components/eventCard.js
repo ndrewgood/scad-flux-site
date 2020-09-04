@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/eventCard.scss'
+import '../styles/card.scss'
 import { Link } from 'gatsby'
 import image from '../assets/test-photo.jpg'
 
 const eventCard = props => {
-    let size = "eventCard"
+    let size = "eventCard card"
 
     if(props.size) {
         size += " " + props.size

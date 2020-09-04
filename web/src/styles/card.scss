@@ -1,4 +1,4 @@
-.eventCard {
+.card {
     padding: 20px;
     margin-bottom: 20px; 
     position: relative;
@@ -51,14 +51,15 @@
     }
 
     p {
-        margin-bottom: 15px;
+        margin-bottom: 35px;
         color: #444444;
 
     }
 
     .viewMore {
-        position: relative;
-        float: right;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
         color: #316EFF;
         text-decoration: none;
         margin: 0;
@@ -66,6 +67,6 @@
 
 }
 
-.eventCard:hover {
+.card:hover {
     box-shadow: 0px 18px 32px -4px rgba(56, 56, 56, 0.288);    
 }

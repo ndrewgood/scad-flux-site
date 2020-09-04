@@ -21,7 +21,11 @@ const CommunityPage = props => {
 
   return (
     <Layout>
-      <h1>Community Page</h1>
+      <main className="adjusted">
+        <div className="container">
+          <h1>Community Page</h1>
+        </div>
+      </main>
     </Layout>
   )
 }

@@ -5,11 +5,11 @@ import '../styles/events-grid.scss'
 
 const eventsgrid = () => {
     return(
-        <section className="events-grid">
+        <section className="events-grid graySection">
             <div className="container">
                 <div className="eventTitle">
                     <h1 className="title medium">Events</h1>
-                    <button className="whiteButton">Add FLUX Calendar</button>
+                    <a href="https://calendar.google.com/calendar/r?cid=e9rlneefmiuisqv958a1s9jl9c@group.calendar.google.com"><button className="whiteButton">Add FLUX Calendar</button></a>
                 </div>
                 <div className="threeGrid">
                     <EventCard size="expanded"/>

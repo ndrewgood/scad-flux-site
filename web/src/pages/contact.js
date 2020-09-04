@@ -21,7 +21,11 @@ const ContactPage = props => {
 
   return (
     <Layout>
-      <h1>Contact Page</h1>
+      <main className="adjusted">
+        <div className="container">
+          <h1>Contact Page</h1>
+        </div>
+      </main>
     </Layout>
   )
 }

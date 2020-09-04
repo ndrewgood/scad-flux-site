@@ -21,7 +21,11 @@ const AboutPage = props => {
 
   return (
     <Layout>
-      <h1>About Page</h1>
+      <main className="adjusted">
+        <div className="container">
+          <h1>About Page</h1>
+        </div>
+      </main>
     </Layout>
   )
 }

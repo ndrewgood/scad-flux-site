@@ -23,7 +23,7 @@ const smallCommunityGrid = () => {
     `
 
     return(
-        <section className="smallCommunityGrid">
+        <section className="smallCommunityGrid graySection">
             <div className="container">
                 <div className="sectionTitle">
                     <h1 className="title medium">FLUX Community</h1>
