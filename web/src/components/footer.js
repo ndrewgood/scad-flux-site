@@ -1,10 +1,10 @@
 import React from 'react'
 import '../styles/footer.scss'
 import usersvg from '../assets/icons/icon-user.svg'
-import discord from '../assets/icons/discord.svg'
-import insta from '../assets/icons/insta.svg'
-import fb from '../assets/icons/fb.svg'
-import email from '../assets/icons/email.svg'
+import Discord from '../assets/icons/discord.svg'
+import Insta from '../assets/icons/insta.svg'
+import Fb from '../assets/icons/fb.svg'
+import Email from '../assets/icons/email.svg'
 
 const footer = () => {
     return(
@@ -13,10 +13,10 @@ const footer = () => {
                 <div className="socialMediaContainer">
                     <p className="body semi-bold">Follow us</p>
                     <ul>
-                        <li><img src={fb} alt=""/></li>
-                        <li><img src={insta} alt=""/></li>
-                        <li><img src={discord} alt=""/></li>
-                        <li><img src={email} alt=""/></li>
+                        <a href="https://www.facebook.com/groups/scadflux" target="_blank"><li><Fb/></li></a>
+                        <a href="https://www.instagram.com/scadflux/" target="_blank"><li><Insta/></li></a>
+                        <a href="https://discord.gg/FMJ4tY8" target="_blank"><li><Discord/></li></a>
+                        <a href="mailto:scadflux@gmail.com" target="_blank"><li><Email/></li></a>
                     </ul>
                 </div>
                 <form className="emailContainer">

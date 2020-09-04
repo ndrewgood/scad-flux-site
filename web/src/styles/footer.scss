@@ -13,6 +13,15 @@ footer {
 
         li {
             margin-right: 20px;
+
+            svg {
+                fill: #111;
+                transition: all 300ms ease-in-out;
+
+                &:hover {
+                    fill: #316EFF;
+                }
+            }
         }
     }
 
