@@ -2,6 +2,8 @@ import React from 'react'
 import {graphql} from 'gatsby'
 
 import Layout from '../containers/layout'
+import Back from '../components/back'
+import EventGrid from '../components/eventGrid'
 
 
 export const query = graphql`
@@ -23,7 +25,9 @@ const EventsPage = props => {
     <Layout>
       <main className="adjusted">
         <div className="container">
+          <Back/>
           <h1>Events Page</h1>
+          <EventGrid/>
         </div>
       </main>
     </Layout>

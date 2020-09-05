@@ -1,0 +1,31 @@
+.backButton {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    transition: all 500ms ease-out;
+    text-decoration: none;
+
+    p {
+        margin: 0 15px 0;
+        transition: all 500ms ease-out;
+    }
+
+    svg {
+        fill: #444;
+        transition: all 500ms ease-out;
+    }
+
+    &:hover {
+        transform: translateX(15px);
+
+        p {
+            color: #1B5BF5;
+        }
+
+        svg {
+            fill: #1B5BF5;
+            transform: rotate(180deg);
+        }
+    }
+
+}

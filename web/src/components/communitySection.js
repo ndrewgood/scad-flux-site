@@ -5,7 +5,7 @@ import CommunityCard from './communityCard'
 import ViewAllButton from './viewAllButton'
 import '../styles/smallCommunityGrid.scss'
 
-const smallCommunityGrid = () => {
+const communitySection = () => {
 
     const communityQuery = graphql`
         query communityQuery{
@@ -48,4 +48,4 @@ const smallCommunityGrid = () => {
     )
 }
 
-export default smallCommunityGrid
+export default communitySection

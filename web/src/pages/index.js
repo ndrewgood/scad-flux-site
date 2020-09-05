@@ -3,10 +3,10 @@ import {graphql} from 'gatsby'
 
 import Layout from '../containers/layout'
 import Hero from '../components/hero'
-import EventsGrid from '../components/events-grid'
+import EventSection from '../components/eventSection'
 import Newsletter from '../components/newsletter'
 import Gallery from '../components/gallery'
-import SmallCommunityGrid from '../components/smallCommunityGrid'
+import CommunitySection from '../components/communitySection'
 import FluxResources from '../components/fluxResources.js'
 
 
@@ -29,11 +29,11 @@ const IndexPage = props => {
     <Layout>
       <Hero />
       <main>
-        <EventsGrid />
+        <EventSection />
         <Newsletter />
         <FluxResources />
         <Gallery />
-        <SmallCommunityGrid />
+        <CommunitySection />
       </main>
     </Layout>
   )
