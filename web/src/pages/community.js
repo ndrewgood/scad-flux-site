@@ -3,6 +3,7 @@ import {graphql} from 'gatsby'
 
 import Layout from '../containers/layout'
 import Back from '../components/back'
+import CommunityGrid from '../components/communityGrid'
 
 
 export const query = graphql`
@@ -26,7 +27,7 @@ const CommunityPage = props => {
         <div className="container">
           <Back/>
           <h1>Community Page</h1>
-          
+          <CommunityGrid/>
         </div>
       </main>
     </Layout>
