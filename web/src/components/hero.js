@@ -5,7 +5,7 @@ import {StaticQuery, graphql} from 'gatsby'
 import HeroButton from './heroButton'
 
 import '../styles/hero.scss'
-import fluxLogo from "../assets/FLUXlogo.svg";
+import FluxLogo from "../assets/FLUXlogo.svg";
 
 const hero = () => {
 
@@ -24,7 +24,7 @@ const hero = () => {
 
     return(
         <div className="hero">
-            <img src={fluxLogo} className="box-shadow-dreamy" alt=""/>
+            <FluxLogo className="box-shadow-dreamy"/>
             <div className="heroHeaderContainer">
                 <h1>We're the Future Leaders of <br/>User Experience Design</h1>
                 <div className="heroHighlight hh1"></div>
