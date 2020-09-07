@@ -4,7 +4,7 @@ import {graphql, StaticQuery} from 'gatsby'
 import CommunityCard from './communityCard'
 import '../styles/smallCommunityGrid.scss'
 
-const communitySection = () => {
+const communityGrid = () => {
 
     const communityQuery = graphql`
         query communityQuery{
@@ -35,4 +35,4 @@ const communitySection = () => {
     )
 }
 
-export default communitySection
+export default communityGrid

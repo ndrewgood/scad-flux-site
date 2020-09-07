@@ -35,8 +35,12 @@ nav {
 
             li {
                 margin-left: 30px;
-                
-                &.selected:after {
+            
+            }
+
+            .selected {
+                color: #1B5BF5;
+                &:after {
                     display: block;
                     box-sizing: border-box;
                     content: ' ';

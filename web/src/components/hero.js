@@ -24,7 +24,7 @@ const hero = () => {
 
     return(
         <div className="hero">
-            <FluxLogo className="box-shadow-dreamy"/>
+            <FluxLogo className="fluxLogo box-shadow-dreamy"/>
             <div className="heroHeaderContainer">
                 <h1>We're the Future Leaders of <br/>User Experience Design</h1>
                 <div className="heroHighlight hh1"></div>

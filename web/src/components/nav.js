@@ -11,11 +11,11 @@ const nav = (props) => {
                     <Logo/>
                 </Link>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/events">Events</Link></li>
-                    <li className="selected"><Link to="/community">Community</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/" activeClassName="selected">Home</Link></li>
+                    <li><Link to="/about" activeClassName="selected">About</Link></li>
+                    <li><Link to="/events" activeClassName="selected">Events</Link></li>
+                    <li><Link to="/community" activeClassName="selected">Community</Link></li>
+                    <li><Link to="/contact" activeClassName="selected">Contact</Link></li>
                 </ul>
             </div>
         </nav>
