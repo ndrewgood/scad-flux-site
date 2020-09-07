@@ -26,7 +26,7 @@ const EventsPage = props => {
       <main className="adjusted">
         <div className="container">
           <Back/>
-          <h1>Events Page</h1>
+          <h1 className="title medium">Events Page</h1>
           <EventGrid/>
         </div>
       </main>

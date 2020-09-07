@@ -4,6 +4,7 @@ import BlockContent from '@sanity/block-content-to-react'
 
 
 import Layout from '../containers/layout'
+import Back from '../components/back'
 
 export const query = graphql`
 
@@ -30,10 +31,15 @@ const eventTemplate = props => {
 
   return (
     <Layout>
-        <h1>{event.title}</h1>
-        <p>
+        <main className="adjusted">
+        <div className="container">
+          <Back/>
+          <h1>{event.title}</h1>
+          <p>
             <BlockContent blocks={event._rawExcerpt}/>
-        </p>
+          </p>
+        </div>
+      </main>
     </Layout>
   )
 }

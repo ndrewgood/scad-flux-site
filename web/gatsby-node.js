@@ -30,7 +30,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     events.forEach((edge, index) => {
       const slug = edge.node.slug.current
-      const path = `/${edge.node.slug.current}`
+      const path = `/events/${edge.node.slug.current}`
   
       createPage({
         path,

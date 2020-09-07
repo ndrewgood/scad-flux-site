@@ -12,7 +12,7 @@ const eventCard = (props) => {
     }
 
     return(
-        <Link className={size} to={props.slug.current} >
+        <Link className={size} to={"events/" + props.slug.current} >
             <div>
                 <img src={props.thumb} alt=""/>
             </div>
