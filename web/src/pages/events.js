@@ -4,7 +4,9 @@ import {graphql} from 'gatsby'
 import Layout from '../containers/layout'
 import Back from '../components/back'
 import EventGrid from '../components/eventGrid'
-
+import Checkbox from '../components/checkbox'
+import EventTitle from '../components/eventTitle'
+import '../styles/event.scss'
 
 export const query = graphql`
   query eventsPageQuery {
@@ -25,8 +27,13 @@ const EventsPage = props => {
     <Layout>
       <main className="adjusted">
         <div className="container">
-          <Back/>
-          <h1 className="title medium">Events Page</h1>
+          <div className="eventsHeader">
+            <Back/>
+            <EventTitle/>
+            <form>
+                <Checkbox id="pastEvents" value="Show Past Events"/>
+              </form>
+          </div>
           <EventGrid/>
         </div>
       </main>

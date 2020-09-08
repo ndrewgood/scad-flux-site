@@ -110,10 +110,15 @@ section {
     font-weight: 600;
     text-transform: capitalize;
     font-size: 15px;
-    background: #1B5BF5;
+    background-color: #1B5BF5;
     color: white;
     border: none;
     border-radius: 5px;
+    transition: all 400ms ease-out;
+
+    &:hover {
+        background-color: #0040DA;
+    }
 }
 
 .whiteButton {

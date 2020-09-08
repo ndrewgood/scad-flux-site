@@ -37,6 +37,13 @@ const CommunityPage = props => {
             </form>
           </div>
           <CommunityGrid/>
+          <ul className="pagination">
+            <li>«</li>
+            <li className="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>»</li>
+          </ul>
         </div>
       </main>
     </Layout>

@@ -2,7 +2,6 @@ import React from 'react'
 import {graphql, StaticQuery} from 'gatsby'
 
 import EventCard from './eventCard'
-import '../styles/events-grid.scss'
 
 const eventGrid = () => {
 
