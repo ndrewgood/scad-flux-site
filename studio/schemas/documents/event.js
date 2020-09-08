@@ -39,6 +39,12 @@ export default {
       name: 'body',
       title: 'Body',
       type: 'contentPortableText'
+    },
+    {
+      name: 'links',
+      title: 'Links',
+      type: 'array',
+      of: [{type: 'link'}]
     }
   ],
   preview: {

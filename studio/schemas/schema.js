@@ -17,6 +17,8 @@ import simplePortableText from './objects/simplePortableText'
 import contentPortableText from './objects/contentPortableText'
 import figure from './objects/figure'
 import cta from './objects/cta'
+import link from './objects/link'
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -31,6 +33,7 @@ export default createSchema({
     contentPortableText,
     figure,
     cta,
+    link,
     // The following are document types which will appear
     // in the studio.
     siteSettings,

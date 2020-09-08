@@ -1,0 +1,43 @@
+.eventContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    max-width: 1200px;
+    width: 90vw;
+    @media only screen and (max-width: 650px) {
+        grid-template-columns: 1fr;
+    }    
+    .eventDetails {
+        .aboutHeader {
+            margin-top: 60px;
+            font-size: 22px;
+            @media only screen and (max-width: 650px) {
+                margin-top: 30px;
+            }    
+        }
+    }
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .eventButtonContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        @media only screen and (max-width: 650px) {
+            flex-direction: column;
+        }
+        a {
+            @media only screen and (max-width: 650px){
+                margin: auto;
+                margin-top: 10px;
+                max-width: none;
+                .blueButton {
+                    width: 90vw;
+                    padding: 20px 22px;
+                }
+        
+            }
+        }
+    }
+}
