@@ -6,6 +6,8 @@ import HeroButton from './heroButton'
 
 import '../styles/hero.scss'
 import FluxLogo from "../assets/FLUXlogo.svg";
+import leftCircle from "../assets/leftCircle.svg";
+
 
 const hero = () => {
 
@@ -25,6 +27,7 @@ const hero = () => {
     return(
         <div className="hero">
             <FluxLogo className="fluxLogo box-shadow-dreamy"/>
+            <leftCircle className="leftCircle"/>
             <div className="heroHeaderContainer">
                 <h1>We're the Future Leaders of <br/>User Experience Design</h1>
                 <div className="heroHighlight hh1"></div>
@@ -44,5 +47,5 @@ const hero = () => {
         </div>
     )
 }
-
+ 
 export default hero

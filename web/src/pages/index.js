@@ -27,7 +27,7 @@ const IndexPage = props => {
 
   return (
     <Layout>
-      <Hero />
+      <Hero /> 
       <main>
         <EventSection />
         <Newsletter />
