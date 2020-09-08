@@ -4,6 +4,9 @@ footer {
     .container {
         display: grid;
         grid-template-columns: 5fr 7fr;
+        @media only screen and (max-width: 650px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     ul {
@@ -52,6 +55,9 @@ footer {
         
         button {
             float: right;
+        }
+        @media only screen and (max-width: 650px) {
+            margin-top: 20px;
         }
     }    
 }

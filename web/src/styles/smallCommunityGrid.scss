@@ -3,4 +3,26 @@
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
+    @media only screen and (max-width: 1050px) {
+        .body.medium {
+            width: 60vw;
+        }
+    }
+    @media only screen and (max-width: 650px) {
+        flex-direction: column;
+        .body.medium {
+            width: auto; 
+       }
+       .whiteButton {
+           margin-top: 15px;
+       }
+    }
+}
+
+.smallCommunityGrid {
+    .threeGrid {
+        @media only screen and (max-width: 650px) {
+            grid-template-columns: 1fr 1fr !important;
+        }
+    }
 }

@@ -16,6 +16,9 @@ nav {
         svg {
             height: 40px;
             width: 40px;
+            @media only screen and (max-width: 650px){
+                display: none;
+            }
         }
 
         a {
@@ -32,10 +35,11 @@ nav {
             display: flex;
             padding: 0;
             margin: 0;
-
-            li {
-                margin-left: 30px;
-            
+            width: 400px;
+            justify-content: space-between;
+            @media only screen and (max-width: 650px) {
+                margin: auto;
+                width: 80vw;
             }
 
             .selected {

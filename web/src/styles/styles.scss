@@ -90,6 +90,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
+    @media only screen and (max-width: 1000px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (max-width: 650px){
+        grid-template-columns: 1fr;
+    }
 }
 
 section {
