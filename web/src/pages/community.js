@@ -15,6 +15,17 @@ export const query = graphql`
       description
       keywords
     }
+
+    allSanityCommunity {
+        edges {
+            node {
+                name
+                portfolio
+                title
+                year
+            }
+        }
+    }
   }
 `
 
@@ -36,7 +47,7 @@ const CommunityPage = props => {
               <Checkbox id="graduated" value="Graduated"/>
             </form>
           </div>
-          <CommunityGrid/>
+          <CommunityGrid data={data.allSanityCommunity}/>
           <ul className="pagination">
             <li>«</li>
             <li className="active">1</li>
