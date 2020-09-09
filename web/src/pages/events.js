@@ -14,6 +14,22 @@ export const query = graphql`
       title
       description
       keywords
+    },
+    allSanityEvent(sort: {fields: eventTime}) {
+      edges {
+        node {
+          _rawSlug
+          title
+          id
+          eventTime(formatString: "MMMM Do YYYY • h:mma")
+          _rawExcerpt
+          thumbnail {
+            asset {
+              url
+            }
+          }
+        }
+      }
     }
   }
 `
@@ -34,7 +50,7 @@ const EventsPage = props => {
                 <Checkbox id="pastEvents" value="Show Past Events"/>
               </form>
           </div>
-          <EventGrid limit={100}/>
+          <EventGrid array={data.allSanityEvent.edges}/>
         </div>
       </main>
     </Layout>

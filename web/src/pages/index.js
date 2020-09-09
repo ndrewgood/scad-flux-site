@@ -9,7 +9,6 @@ import Gallery from '../components/gallery'
 import CommunitySection from '../components/communitySection'
 import FluxResources from '../components/fluxResources.js'
 
-
 export const query = graphql`
   query IndexPageQuery {
     site: sanitySiteSettings(_id: {regex: "/(drafts.|)siteSettings/"}) {

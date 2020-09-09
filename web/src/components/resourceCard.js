@@ -1,13 +1,12 @@
 import React from 'react'
 import '../styles/card.scss'
-import { Link } from 'gatsby'
-import image from '../assets/test-photo.jpg'
+
 
 const resourceCard = props => {
     return(
         <a target="_blank" href={props.link} className="resourceCard card">
             <div>
-                <img src={image} alt=""/>
+                <img src={props.image} alt=""/>
             </div>
             <h2 className="body large bold">{props.title}</h2>
             <p className="body small">{props.description}</p>
