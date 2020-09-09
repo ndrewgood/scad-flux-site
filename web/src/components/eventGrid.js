@@ -3,7 +3,7 @@ import {graphql, StaticQuery} from 'gatsby'
 
 import EventCard from './eventCard'
 
-const eventGrid = () => {
+const eventGrid = (props) => {
 
     const eventQuery = graphql`
     query eventQuery {
@@ -31,8 +31,8 @@ const eventGrid = () => {
             <StaticQuery 
                 query={eventQuery}
                 render={data => (
-                    data.allSanityEvent.edges.map(edge => (
-                        <EventCard slug={edge.node._rawSlug} thumb={edge.node.thumbnail.asset.url} title={edge.node.title} id={edge.node.id} time={edge.node.eventTime} excerpt={edge.node._rawExcerpt} />
+                    data.allSanityEvent.edges.slice(0,props.limit).map((edge, index) => (
+                        <EventCard key={index} slug={edge.node._rawSlug} thumb={edge.node.thumbnail.asset.url} title={edge.node.title} id={edge.node.id} time={edge.node.eventTime} excerpt={edge.node._rawExcerpt} />
                     ))
                 )}
             />

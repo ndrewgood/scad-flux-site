@@ -38,8 +38,8 @@ const hero = () => {
                 <StaticQuery 
                   query={heroQuery}
                   render={data => (
-                    data.sanityHeroCta.ctaList.map( cta => (
-                        <HeroButton link={cta.link} title={cta.text} />
+                    data.sanityHeroCta.ctaList.map( (cta, index) => (
+                        <HeroButton key={index} link={cta.link} title={cta.text} />
                     ))
                   )}
                 />

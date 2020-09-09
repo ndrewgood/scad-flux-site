@@ -1,10 +1,34 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import {graphql, useStaticQuery} from 'gatsby'
+
 
 import CommunityGrid from './communityGrid'
 import ViewAllButton from './viewAllButton'
 import '../styles/smallCommunityGrid.scss'
 
+import shuffle from '../lib/randomArray'
+
+
 const communitySection = () => {
+    const data = useStaticQuery(graphql`
+    query communitySection{
+        allSanityCommunity {
+            edges {
+                node {
+                    title
+                    name
+                    portfolio
+                    year
+                    id
+                }
+            }
+        }
+        }
+    `)
+
+  const communityArray = shuffle(data.allSanityCommunity.edges)
+
+
     return(
         <section className="smallCommunityGrid graySection">
             <div className="container">
@@ -15,7 +39,9 @@ const communitySection = () => {
                         <button className="whiteButton">Submit Your Portfolio</button>
                     </div>
                 </div>
-                <CommunityGrid/>
+                <CommunityGrid limit={9}
+                               data={data}
+                               array={communityArray}/>
                 <ViewAllButton link="/community" type="Talent"/>
             </div>
         </section>

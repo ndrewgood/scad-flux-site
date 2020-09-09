@@ -8,7 +8,7 @@ const eventsgrid = () => {
         <section className="events-grid graySection">
             <div className="container">
                 <EventTitle/>
-                <EventGrid/>
+                <EventGrid limit={6}/>
                 <ViewAllButton link="/events" type="Events"/>
             </div>           
         </section>

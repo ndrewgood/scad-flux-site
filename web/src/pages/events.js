@@ -34,7 +34,7 @@ const EventsPage = props => {
                 <Checkbox id="pastEvents" value="Show Past Events"/>
               </form>
           </div>
-          <EventGrid/>
+          <EventGrid limit={100}/>
         </div>
       </main>
     </Layout>
