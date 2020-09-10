@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/gallery.scss'
+import GalleryCard from './galleryCard'
 
 const gallery = () => {
     return(
@@ -10,12 +11,11 @@ const gallery = () => {
                     <p className="body medium">Heres a quick description of the kinds of events on here. this paragraph will take up more space and will have more purpose to it i just didnt feel like grabbing lorem.</p>
                 </div>
                 <div className="galleryGrid">
-                    <div className="one gridArea"></div>
-                    <div className="two gridArea"></div>
-                    <div className="three gridArea"></div>
-                    <div className="four gridArea"></div>
-                    <div className="five gridArea"></div>
-                    <div className="six gridArea"></div>
+                    <GalleryCard wide={true}/>
+                    <GalleryCard/>
+                    <GalleryCard/>
+                    <GalleryCard/>
+                    <GalleryCard/>
                 </div>
             </div>
         </section>

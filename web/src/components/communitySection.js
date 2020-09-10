@@ -44,7 +44,7 @@ const communitySection = () => {
                         <a target="_blank" href="https://forms.gle/ZVgPmL3qT8Qrs7xZA"><button className="whiteButton">Submit Your Portfolio</button></a>
                     </div>
                 </div>
-                <CommunityGrid limit={9}
+                <CommunityGrid limit={12}
                                data={data}
                                array={communityArray}/>
                 <ViewAllButton link="/community" type="Talent"/>

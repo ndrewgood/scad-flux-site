@@ -1,17 +1,23 @@
 import React from 'react'
 import '../styles/galleryCard.scss'
-import image from '../assets/test-photo.jpg'
+import image from '../assets/medium.jpg'
 
-const gallery = props => {
+const galleryCard = props => {
+    let width = "galleryItem"
+    
+    if(props.wide == true) {
+        width = "galleryItem wide"
+    }
+
+    let backgroundImg = {
+        background: `url(${image}) no-repeat center`,
+        "background-size": "cover"
+    }
+
     return(
-        <div className="gridArea">
-            <img src={image} alt=""/>
-            <div>
-                <div>
-                    <h1>{props.title}</h1>
-                    <p>{props.description}</p>
-                </div>
-                <button></button>           
+        <div className={width} style={backgroundImg}>
+            <div className="galleryInfo">
+
             </div>
         </div>
     )
