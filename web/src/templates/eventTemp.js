@@ -69,7 +69,7 @@ const eventTemplate = props => {
             </div>
             <div className="eventDetails">
               <h1>{event.title}</h1>
-              <p className="body" >{event.eventTime}</p>
+              <p className="body" >{event.eventTime ? event.eventTime : "Time and Date TBD"}</p>
               <h2 className="aboutHeader">About the event</h2>
               <BlockContent 
                 className="body" 

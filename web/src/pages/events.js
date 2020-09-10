@@ -47,7 +47,7 @@ const EventsPage = props => {
             <Back/>
             <EventTitle/>
             <form>
-                <Checkbox id="pastEvents" value="Show Past Events"/>
+                {/* <Checkbox id="pastEvents" value="Show Past Events"/> */}
               </form>
           </div>
           <EventGrid array={data.allSanityEvent.edges}/>

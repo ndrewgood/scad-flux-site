@@ -23,6 +23,11 @@ const CommunityPage = props => {
                   portfolio
                   year
                   id
+                  image {
+                    asset {
+                        url
+                    }
+                }
               }
           }
       }
@@ -34,14 +39,14 @@ const CommunityPage = props => {
   useEffect(() => {
     shuffle(communityArray);
     setButtons({
-      enrolled: false,
-      graduated: false
+      seniors: false,
+      alumni: false
     })
   }, []);
 
   const [buttons, setButtons] = useState({
-    enrolled: false,
-    graduated: false
+    seniors: false,
+    alumni: false
   })
 
 
@@ -64,16 +69,19 @@ const CommunityPage = props => {
           <div className="communityHeader">
             <Back/>
             <h1 className="title medium">Community Page</h1>
-            <p className="body medium">FLUX exists to foster a community of leaders and problem-solvers through UX Design. Check out some of the work from some of our members, and feel free to submit yours as well! Portfolio submissions are open to all members of the FLUX community, regardless of major.</p>
+            <div className="communityDescription">
+                <p className="body medium">FLUX exists to foster a community of leaders and problem-solvers through UX Design. Check out some of the work from some of our members, and feel free to submit yours as well! Portfolio submissions are open to all members of the FLUX community, regardless of major.</p>
+                <a target="_blank" href="https://forms.gle/ZVgPmL3qT8Qrs7xZA"><button className="whiteButton">Submit Your Portfolio</button></a>
+            </div>            
             <form>
-              <Checkbox id="enrolled" 
-                        checked={buttons.enrolled}
+              <Checkbox id="seniors" 
+                        checked={buttons.seniors}
                         change={handleInputChange}
-                        value="Currently Enrolled"/>
-              <Checkbox id="graduated" 
-                        checked={buttons.graduated}
+                        value="Seniors"/>
+              <Checkbox id="alumni" 
+                        checked={buttons.alumni}
                         change={handleInputChange}
-                        value="Graduated"/>
+                        value="Alumni"/>
             </form>
           </div>
           <CommunityGrid buttons={buttons} 
