@@ -1,6 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql, useStaticQuery } from 'gatsby'
+import favicon from '../assets/favicon2.png'
 
 
 const seo = () => {
@@ -11,14 +12,52 @@ const seo = () => {
           }
       }
       
-  `)
-  const site = (data || {}).site
+    `)
+    const site = (data || {}).site
     
+    const title = "SCAD Flux"
+    const desc = "FLUX | the User Experience (UX) Design club at the Savannah College of Art and Design."
+
     return (
-        <Helmet>
-            <title>{site.title}</title>
-            <meta name="description" content="SCAD FLUX" />
-        </Helmet>
+        <Helmet
+            link={[
+                { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
+            ]}
+            meta={[
+                {
+                name: `description`,
+                content: desc,
+                },
+                {
+                property: `og:title`,
+                content: title,
+                },
+                {
+                property: `og:description`,
+                content: desc,
+                },
+                {
+                property: `og:type`,
+                content: `website`,
+                },
+                {
+                name: `twitter:card`,
+                content: `summary`,
+                },
+                {
+                name: `twitter:creator`,
+                content: title,
+                },
+                {
+                name: `twitter:title`,
+                content: title,
+                },
+                {
+                name: `twitter:description`,
+                content: desc,
+                },
+            ]}
+        />
     )
 }
 

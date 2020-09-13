@@ -31,7 +31,8 @@ const IndexPage = props => {
         <EventSection />
         <Newsletter />
         <FluxResources />
-        <Gallery />
+        {/* Commenting gallery out just for now */}
+        {/* <Gallery /> */}
         <CommunitySection />
       </main>
     </Layout>

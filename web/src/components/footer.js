@@ -20,7 +20,7 @@ const footer = () => {
                     </ul>
                 </div>
                 <form action="https://send.pageclip.co/0UiYhDA0j1IX44dBk33MbopV8pazPw22" class="pageclip-form" method="post" className="emailContainer">
-                    <p className="body semi-bold">Send us your feedback</p>
+                    <p className="body semi-bold">Contact us</p>
                     <div className="emailTopBar">
                         <div className="iconInput">
                             <input type="text" name="name" placeholder="Name" id="name" className="filled"/>

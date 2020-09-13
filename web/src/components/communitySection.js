@@ -31,7 +31,11 @@ const communitySection = () => {
         }
     `)
 
-  const communityArray = shuffle(data.allSanityCommunity.edges)
+    const communityArray = shuffle(data.allSanityCommunity.edges)
+
+    useEffect(() => {
+        shuffle(communityArray);
+    }, []);
 
 
     return(
@@ -44,7 +48,7 @@ const communitySection = () => {
                         <a target="_blank" href="https://forms.gle/ZVgPmL3qT8Qrs7xZA"><button className="whiteButton">Submit Your Portfolio</button></a>
                     </div>
                 </div>
-                <CommunityGrid limit={12}
+                <CommunityGrid limit={9}
                                data={data}
                                array={communityArray}/>
                 <ViewAllButton link="/community" type="Talent"/>

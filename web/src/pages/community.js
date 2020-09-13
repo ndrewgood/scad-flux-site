@@ -77,11 +77,11 @@ const CommunityPage = props => {
               <Checkbox id="seniors" 
                         checked={buttons.seniors}
                         change={handleInputChange}
-                        value="Seniors"/>
+                        value="Seniors only"/>
               <Checkbox id="alumni" 
                         checked={buttons.alumni}
                         change={handleInputChange}
-                        value="Alumni"/>
+                        value="Alumni only"/>
             </form>
           </div>
           <CommunityGrid buttons={buttons} 
