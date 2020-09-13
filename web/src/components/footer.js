@@ -19,7 +19,7 @@ const footer = () => {
                         <a href="mailto:scadflux@gmail.com" target="_blank"><li><Email/></li></a>
                     </ul>
                 </div>
-                <form action="https://send.pageclip.co/HDxWQMLZAInA7o0yg09cY2rTdfEY3r4x/flux" class="pageclip-form" method="post" className="emailContainer">
+                <form action="https://send.pageclip.co/HDxWQMLZAInA7o0yg09cY2rTdfEY3r4x/flux" className="pageclip-form emailContainer" method="post">
                     <p className="body semi-bold">Contact Us</p>
                     <div className="emailTopBar">
                         <div className="iconInput">
