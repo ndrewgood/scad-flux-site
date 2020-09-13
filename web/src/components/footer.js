@@ -19,8 +19,8 @@ const footer = () => {
                         <a href="mailto:scadflux@gmail.com" target="_blank"><li><Email/></li></a>
                     </ul>
                 </div>
-                <form action="https://send.pageclip.co/0UiYhDA0j1IX44dBk33MbopV8pazPw22" class="pageclip-form" method="post" className="emailContainer">
-                    <p className="body semi-bold">Contact us</p>
+                <form action="https://send.pageclip.co/HDxWQMLZAInA7o0yg09cY2rTdfEY3r4x/flux" class="pageclip-form" method="post" className="emailContainer">
+                    <p className="body semi-bold">Send us your feedback</p>
                     <div className="emailTopBar">
                         <div className="iconInput">
                             <input type="text" name="name" placeholder="Name" id="name" className="filled"/>
