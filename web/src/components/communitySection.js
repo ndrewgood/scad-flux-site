@@ -35,6 +35,7 @@ const communitySection = () => {
 
     useEffect(() => {
         shuffle(communityArray);
+        setTimeout(shuffle(communityArray), 1000);
     }, []);
 
 

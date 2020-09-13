@@ -22,7 +22,7 @@
 .smallCommunityGrid {
     .threeGrid {
         @media only screen and (max-width: 650px) {
-            grid-template-columns: 1fr 1fr !important;
+            grid-template-columns: 1fr !important;
         }
     }
 }

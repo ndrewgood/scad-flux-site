@@ -44,6 +44,9 @@
         border-radius: 5px;
         z-index: -2;
         background-color: #BDD0FF;
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
     }
 
     .hh1 {
