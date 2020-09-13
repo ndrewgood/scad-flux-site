@@ -17,6 +17,11 @@
     "lerna": "^3.13.1"
   },
   "dependencies": {
-    "gatsby-plugin-react-svg": "^3.0.0"
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "lax": "0.0.40",
+    "lax.js": "^1.2.5",
+    "react-dom": "^16.13.1",
+    "react-spring": "^8.0.27",
+    "use-lax": "^3.2.0"
   }
 }

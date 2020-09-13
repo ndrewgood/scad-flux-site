@@ -6,7 +6,7 @@ import HeroButton from './heroButton'
 
 import '../styles/hero.scss'
 import FluxLogo from "../assets/FLUXlogo.svg";
-import leftCircle from "../assets/leftCircle.svg";
+import Circle from "../assets/leftCircle.svg";
 
 
 const hero = () => {
@@ -26,8 +26,8 @@ const hero = () => {
 
     return(
         <div className="hero">
+            <Circle  data-lax-preset="fadeIn" className="leftCircle lax"/>
             <FluxLogo className="fluxLogo box-shadow-dreamy"/>
-            <leftCircle className="leftCircle"/>
             <div className="heroHeaderContainer">
                 <h1>We're the Future Leaders of <br/>User Experience Design</h1>
                 <div className="heroHighlight hh1"></div>
