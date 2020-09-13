@@ -66,4 +66,60 @@
     position: absolute;
     width: 15%;
     left: 0;
+    z-index: -999;
+} 
+
+.top{
+    display: block;
+    position: absolute;
+    width: 15%;
+    left: 15%;
+    top: 80px;
+}
+
+.otherTop{
+    display: block;
+    position: absolute;
+    width: 15%;
+    right: 15%;
+    top: 80px;
+}
+
+.diamond{
+    display: block;
+    margin-left: auto;
+    margin-right: 15%;
+    width: 50%;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -999;
+    margin-left: 0;
+}
+
+.bottomX{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    z-index: -999;
+    margin-left: 0;
+}
+
+.middleX{
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    width: 25%;
+    z-index: -999;
+    margin-left: 0;
+}
+
+.plus{
+    position: absolute;
+    left: 25%;
+    z-index: -999;
 }

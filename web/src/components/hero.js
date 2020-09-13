@@ -7,6 +7,14 @@ import HeroButton from './heroButton'
 import '../styles/hero.scss'
 import FluxLogo from "../assets/FLUXlogo.svg";
 import Circle from "../assets/leftCircle.svg";
+import Top from "../assets/top.svg";
+import OtherTop from "../assets/otherTop.svg";
+import Diamond from "../assets/diamond.svg";
+import Bottom from "../assets/bottom.svg";
+import BottomX from "../assets/bottomX.svg";
+import MiddleX from "../assets/middleX.svg";
+import Plus from "../assets/plus.svg";
+
 
 
 const hero = () => {
@@ -26,6 +34,13 @@ const hero = () => {
 
     return(
         <div className="hero">
+            <Plus  data-lax-preset="fadeIn" className="plus lax"/>
+            <MiddleX  data-lax-preset="fadeIn" className="middleX lax"/>
+            <BottomX  data-lax-preset="fadeIn" className="bottomX lax"/>
+            <Bottom  data-lax-preset="fadeIn" className="bottom lax"/>
+            <Diamond  data-lax-preset="fadeIn" className="diamond lax"/>
+            <OtherTop  data-lax-preset="fadeIn" className="otherTop lax"/>
+            <Top  data-lax-preset="fadeIn" className="top lax"/>
             <Circle  data-lax-preset="fadeIn" className="leftCircle lax"/>
             <FluxLogo className="fluxLogo box-shadow-dreamy"/>
             <div className="heroHeaderContainer">
@@ -46,6 +61,6 @@ const hero = () => {
             </div>
         </div>
     )
-}
+} 
  
 export default hero
