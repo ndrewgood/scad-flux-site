@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../styles/communityCard.scss'
 
 
@@ -8,11 +8,12 @@ const communityCard = (props) => {
     let pictureUrl = props.picture.asset.url;
     let url = props.portfolio
 
-    setTimeout(function() {
+    useEffect(() => {
         picture = props.picture;
         pictureUrl = props.picture.asset.url;
         url = props.portfolio;
-    }, 1000)
+    }, []);
+
 
     return(
         <a id={props.id} target="_blank" href={url} className="communityCard">
