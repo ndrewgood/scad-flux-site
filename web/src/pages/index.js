@@ -24,6 +24,7 @@ const IndexPage = props => {
 
   const site = (data || {}).site
 
+
   return (
     <Layout>
       <Hero /> 

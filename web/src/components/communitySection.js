@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 
 
@@ -9,7 +9,7 @@ import '../styles/smallCommunityGrid.scss'
 import shuffle from '../lib/randomArray'
 
 
-const communitySection = () => {
+const communitySection = props => {
     const data = useStaticQuery(graphql`
     query communitySection{
         allSanityCommunity {
@@ -31,11 +31,10 @@ const communitySection = () => {
         }
     `)
 
-    const communityArray = shuffle(data.allSanityCommunity.edges)
+    const communityArray = data.allSanityCommunity.edges
 
     useEffect(() => {
         shuffle(communityArray);
-        setTimeout(shuffle(communityArray), 1000);
     }, []);
 
 
