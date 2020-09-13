@@ -34,6 +34,7 @@ const hero = () => {
 
     return(
         <div className="hero">
+            <div className="backgroundElements">
             <Plus  data-lax-preset="fadeIn" className="plus lax"/>
             <MiddleX  data-lax-preset="fadeIn" className="middleX lax"/>
             <BottomX  data-lax-preset="fadeIn" className="bottomX lax"/>
@@ -42,6 +43,7 @@ const hero = () => {
             <OtherTop  data-lax-preset="fadeIn" className="otherTop lax"/>
             <Top  data-lax-preset="fadeIn" className="top lax"/>
             <Circle  data-lax-preset="fadeIn" className="leftCircle lax"/>
+            </div>
             <FluxLogo className="fluxLogo box-shadow-dreamy"/>
             <div className="heroHeaderContainer">
                 <h1>We're the Future Leaders of <br/>User Experience Design</h1>
