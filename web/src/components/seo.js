@@ -23,6 +23,7 @@ const seo = () => {
             link={[
                 { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
             ]}
+            title="SCAD Flux"
             meta={[
                 {
                 name: `description`,
