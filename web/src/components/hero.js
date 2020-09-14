@@ -34,9 +34,10 @@ const hero = () => {
     return(
         <div className="hero">
       <div className="backgroundElements">
-          <Parallax>
+          {/* it keeps changing the postion of element parallax in react is dumb and nothing works */}
+          {/* <Parallax>
           <Plus className="plus"/>
-          </Parallax>
+          </Parallax> */}
 
         <MiddleX  data-lax-preset="fadeIn" className="middleX lax"/>
 
