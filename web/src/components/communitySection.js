@@ -32,6 +32,7 @@ const communitySection = props => {
     `)
 
     const communityArray = data.allSanityCommunity.edges
+    shuffle(communityArray);
 
     useEffect(() => {
         shuffle(communityArray);

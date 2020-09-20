@@ -17,7 +17,7 @@ const eventCard = (props) => {
                 <img src={props.thumb} alt=""/>
             </div>
             <h2 className="body large bold">{props.title}</h2>
-            <h3 className="body regular">{props.time ? props.time : "Time and Date TBD"}</h3>
+            <h3 className="body regular">{props.time ? props.time + " EST": "Time and Date TBD"}</h3>
             <BlockContent className="body small" blocks={props.excerpt} />
             <p className="viewMore body small semi-bold">View More</p>
         </Link>
