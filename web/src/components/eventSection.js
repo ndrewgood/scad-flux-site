@@ -14,13 +14,13 @@ const eventsgrid = () => {
 
     const data = useStaticQuery(graphql`
     query eventSectionQuery {
-        allSanityEvent(sort: {fields: eventTime},limit: 6) {
+        allSanityEvent(sort: {fields: eventTime},limit: 3) {
           edges {
             node {
               _rawSlug
               title
               id
-              eventTime(formatString: "MMMM Do YYYY • h:mma")
+              eventTime
               _rawExcerpt
               thumbnail {
                 asset {
@@ -34,6 +34,13 @@ const eventsgrid = () => {
       `)
 
     const eventArray = data.allSanityEvent.edges;
+
+//               eventTime(formatString: "MMMM Do YYYY • h:mma")
+
+
+    // eventArray.filter((edge) => {
+    //   return edge.node.
+    // })
 
     return(
         <section className="events-grid graySection">
