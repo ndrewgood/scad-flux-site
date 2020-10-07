@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import BlockContent from '@sanity/block-content-to-react'
+import moment from 'moment'
 
 
 import Layout from '../containers/layout'
@@ -24,7 +25,7 @@ export const query = graphql`
           url
         }
       }
-      eventTime(formatString: "MMMM Do YYYY • h:mma")
+      eventTime(formatString: "X")
       _rawBody
       links {
         title
@@ -55,8 +56,9 @@ const eventTemplate = props => {
   const { data } = props
 
   const event = data && data.event
-
-  console.log("event links: " + event.links)
+  
+  //Takes unix time from props, formats it to our display format 
+  let time = moment(event.eventTime, "X").format("MMMM Do YYYY • h:mma")
 
   return (
     <Layout>
@@ -69,7 +71,7 @@ const eventTemplate = props => {
             </div>
             <div className="eventDetails">
               <h1>{event.title}</h1>
-              <p className="body" >{event.eventTime ? event.eventTime + " EST" : "Time and Date TBD"}</p>
+              <p className="body" >{event.eventTime ? time + " EST" : "Time and Date TBD"}</p>
               <h2 className="aboutHeader">About the event</h2>
               <BlockContent 
                 className="body" 

@@ -1,5 +1,6 @@
 import React from 'react'
 import {graphql} from 'gatsby'
+import moment from 'moment'
 
 import Layout from '../containers/layout'
 import Back from '../components/back'
@@ -21,7 +22,7 @@ export const query = graphql`
           _rawSlug
           title
           id
-          eventTime(formatString: "MMMM Do YYYY • h:mma")
+          eventTime(formatString: "X")
           _rawExcerpt
           thumbnail {
             asset {
