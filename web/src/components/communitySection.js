@@ -40,7 +40,7 @@ const communitySection = props => {
 
 
     return(
-        <section className="smallCommunityGrid graySection">
+        <section className="smallCommunityGrid">
             <div className="container">
                 <div className="sectionTitle">
                     <h1 className="title medium">FLUX Community</h1>

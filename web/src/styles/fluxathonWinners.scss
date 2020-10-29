@@ -1,0 +1,27 @@
+.slider-buttons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+
+    li {
+        height: 50px;
+        width: 50px;
+        border: 1px solid #A0A0A0;
+        border-radius: 3px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        color: #444;
+        font-size: 18px;
+        transition: all 600ms ease-out;
+
+        &:hover {
+            border-color: #316EFF;
+            background-color: #316EFF;
+            color: white;
+        }
+    }
+}

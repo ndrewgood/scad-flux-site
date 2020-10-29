@@ -8,6 +8,7 @@ import Newsletter from '../components/newsletter'
 import Gallery from '../components/gallery'
 import CommunitySection from '../components/communitySection'
 import FluxResources from '../components/fluxResources.js'
+import FluxathonWinners from '../components/fluxathonWinners.js'
 
 export const query = graphql`
   query IndexPageQuery {
@@ -35,6 +36,7 @@ const IndexPage = props => {
         {/* Commenting gallery out just for now */}
         {/* <Gallery /> */}
         <CommunitySection />
+        <FluxathonWinners />
       </main>
     </Layout>
   )
