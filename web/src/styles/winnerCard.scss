@@ -13,6 +13,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 
+    @media only screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
     &:before {
         content: "";
         position: absolute;
@@ -36,7 +41,7 @@
 
     .projectTitle {
         h2 {
-            margin-top: 20px;
+            margin-top: 10px;
             margin-bottom: 5px;
         }
 
@@ -60,7 +65,7 @@
 
     .projectDescription {
         margin-top: 0;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .teamGrid {
@@ -69,6 +74,10 @@
         p {
             margin-top: 0;
             margin-bottom: 10px;
+        }
+
+        .memberName {
+            margin-bottom: 0;
         }
     }
 
