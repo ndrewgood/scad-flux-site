@@ -48,14 +48,18 @@ const eventsgrid = () => {
       return parseInt(edge.node.eventTime) + 86400 > parseInt(currentTime) || edge.node.eventTime == null;
     }).slice(0,3);
 
+    if(!noPastEvents.length) {
+      return(null)
+    } 
+
     return(
-        <section className="events-grid graySection">
-            <div className="container">
-                <EventTitle/>
-                <EventGrid array={noPastEvents}/>
-                <ViewAllButton link="/events" type="Events"/>
-            </div>           
-        </section>
+      <section className="events-grid graySection">
+          <div className="container">
+              <EventTitle/>
+              <EventGrid array={noPastEvents}/>
+              <ViewAllButton link="/events" type="Events"/>
+          </div>           
+      </section>
     )
 }
 
