@@ -31,12 +31,12 @@ const IndexPage = props => {
       <Hero /> 
       <main>
         <EventSection />
-        <Newsletter />
+        {/*<Newsletter />*/}
         <FluxResources />
         {/* Commenting gallery out just for now */}
         {/* <Gallery /> */}
         <CommunitySection />
-        <FluxathonWinners />
+        {/*<FluxathonWinners />*/}
       </main>
     </Layout>
   )

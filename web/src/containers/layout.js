@@ -12,7 +12,7 @@ const layout = (props) => {
     return (
         <div id="layout">
             <SEO />
-            <Navigation />
+            {/*<Navigation />*/}
             { children }
             <Footer/>
         </div>

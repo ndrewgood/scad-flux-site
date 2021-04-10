@@ -33,23 +33,6 @@ const hero = () => {
 
     return(
         <div className="hero">
-      <div className="backgroundElements">
-          {/* it keeps changing the postion of element parallax in react is dumb and nothing works */}
-          {/* <Parallax>
-          <Plus className="plus"/>
-          </Parallax> */}
-
-        <MiddleX  data-lax-preset="fadeIn" className="middleX lax"/>
-
-            
-            <BottomX  data-lax-preset="fadeIn" className="bottomX lax"/>
-            <Bottom  data-lax-preset="fadeIn" className="bottom lax"/>
-            <Diamond  data-lax-preset="fadeIn" className="diamond lax"/>
-            <OtherTop  data-lax-preset="fadeIn" className="otherTop lax"/>
-            <Top  data-lax-preset="fadeIn" className="top lax"/>
-            <Circle  data-lax-preset="fadeIn" className="leftCircle lax"/>
-            </div>
-           
             <FluxLogo className="fluxLogo box-shadow-dreamy"/>
             <div className="heroHeaderContainer">
                 <h1>We're the Future Leaders of <br/>User Experience Design</h1>

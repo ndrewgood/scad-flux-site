@@ -4,11 +4,24 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 80px;
+    background: url(../assets/backgroundWeb.png) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    @media only screen and (max-width: 1100px) {
+        background: url(../assets/backgroundTablet.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    @media only screen and (max-width: 600px) {
+        background: url(../assets/backgroundMobile.png) center center no-repeat;
+        background-size: cover;
+    }
+
     @media only screen and (max-width: 800px) {
         padding-top: 40px;
     }
-    height: 100vh;
+    
 
     .buttonHolder {
         width: auto;
@@ -57,82 +70,14 @@
         margin-top: -65px;
         margin-left: 151px;
     }
+    
     .hh2 {
         width: 384px;
         margin-top: -25px;
         margin-left: 25px;
     }
+
     .heroHeaderContainer {
         margin-top: 40px;
-    }
-}
-
-.leftCircle{
-    display: block;
-    position: absolute;
-    width: 15%;
-    left: 0;
-    z-index: -999;
-} 
-
-.top{
-    display: block;
-    position: absolute;
-    width: 15%;
-    left: 15%;
-    top: 80px;
-}
-
-.otherTop{
-    display: block;
-    position: absolute;
-    width: 15%;
-    right: 15%;
-    top: 80px;
-}
-
-.diamond{
-    display: block;
-    margin-left: auto;
-    margin-right: 15%;
-    width: 50%;
-}
-
-.bottom{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: -999;
-    margin-left: 0;
-}
-
-.bottomX{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 25%;
-    z-index: -999;
-    margin-left: 0;
-}
-
-.middleX{
-    position: absolute;
-    right: 5%;
-    top: 40%;
-    width: 25%;
-    z-index: -999;
-    margin-left: 0;
-}
-
-.plus{
-    position: absolute;
-    left: 25%;
-    z-index: -999;
-    transform: translate3d(0);
-}
-
-@media only screen and (max-width:800px){
-    .backgroundElements{
-        visibility: hidden;
     }
 }
