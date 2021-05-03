@@ -15,7 +15,7 @@ const fluxResources = () => {
                     {/*<ResourceCard title="Mentor / Mentee Program" description="Our mentorship program is still happening this quarter! Stay tuned in our Discord or Instagram for the latest updates!" cta="More info coming soon!" link="" image={mentor}/> */}
                     {/*<ResourceCard title="FLUX Medium Publication" description="FLUX will be publishing medium articles to help support you through these turbulent times! Want to write or submit an article? Let us know!" cta="View FLUX Medium" link="https://medium.com/scadflux" image={medium}/>*/}
                     <ResourceCard title="inFLUX Podcast" description="inFLUX is SCAD FLUX's podcast about all things design and more. Every week Zachra makes announcements for the coming weeks, while Nico and Varun co-interview a new guest." cta="Listen to inFLUX" link="https://open.spotify.com/show/1kNJN4x6zYAfdEXS5646YW" image={influx}/>
-                    <ResourceCard title="QBits" description="QBits is a series of live workshops hosted by FLUX member Quint. QBits help you learn the professional tools used to create stunning UX projects!" cta="Watch Recordings" link="https://www.youtube.com/watch?v=io_OSlbKQKs" image={Qbits}/>
+                    <ResourceCard title="QBits" description="QBits is a series of live workshops hosted by FLUX member Quint. QBits helps you learn the professional tools used to create stunning UX projects!" cta="Watch Recordings" link="https://www.youtube.com/watch?v=io_OSlbKQKs" image={Qbits}/>
                 </div>
             </div>
         </section>
